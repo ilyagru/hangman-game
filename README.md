@@ -8,8 +8,10 @@ Hey there!
 
 The live version is available at [https://ilyagru.github.io/hangman-game/](https://ilyagru.github.io/hangman-game/).
 
+**NOTE**: Wordnik API doesn't use HTTPS. So to be able to play you need to allow your browser load from insecure resource. (In Chrome you can click Shield icon in the URL bar and click Load unsafe scripts).
+
 I made the task using React.js and Webpack.
-I tried to create the app which meets all the requirements for this assignment.
+I tried to create the app which meets all the requirements for this assignment as fast as possible.
 Also I added some additional features like unit testing and sounds.
 
 ### Testing
@@ -23,8 +25,8 @@ Custom styles are written with SASS (SCSS syntax) preprocessor.
 
 ## Build Setup
 
-- Clone or download this repository
-- Install and run
+1. Clone or download this repository
+2. Install and run
 
 ``` bash
 # go to directory
