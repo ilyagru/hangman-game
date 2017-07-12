@@ -18,7 +18,6 @@ function GuessedLetters({ guessedLetters, randomWordArray }) {
                 letters[index] = guessedLetter;
             } else {
                 if (letters[index] !== guessedLetter) {
-
                 } else if (letters[index] !== '0') {
                     letters[index] = '1';
                 } else {
@@ -27,7 +26,6 @@ function GuessedLetters({ guessedLetters, randomWordArray }) {
             }
         });
     });
-    // console.log(letters)
 
     const guessedLettersElements = letters.map((letter, index) => {
         return <GuessedLetter letter={letter} key={index} />;

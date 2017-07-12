@@ -51,7 +51,9 @@ class App extends Component {
                     <MissedLetters missedLetters={this.state.missedLetters} />
                 </div>
                 <div>
-                    <GuessedLetters randomWordArray={withDisabledLetters(this.state.randomWordArray)} guessedLetters={this.state.guessedLetters} />
+                    <GuessedLetters
+                        randomWordArray={withDisabledLetters(this.state.randomWordArray)}
+                        guessedLetters={this.state.guessedLetters} />
                 </div>
                 {this.state.isGameOver && <GameOver onNewWordButtonClick={this.onNewWordButtonClick} />}
             </div>
@@ -61,7 +63,7 @@ class App extends Component {
     // HELPERS
 
     async fetchRandomWord() {
-        const response = await fetch('https://api.wordnik.com:80/v4/words.json/randomWord?hasDictionaryDef=true&minCorpusCount=0&maxCorpusCount=-1&minDictionaryCount=1&maxDictionaryCount=-1&minLength=5&maxLength=11&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5');
+        const response = await fetch('http://api.wordnik.com:80/v4/words.json/randomWord?hasDictionaryDef=true&minCorpusCount=0&maxCorpusCount=-1&minDictionaryCount=1&maxDictionaryCount=-1&minLength=5&maxLength=11&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5');
         const json = await response.json();
         const word = json.word.toLowerCase();
 
@@ -80,6 +82,7 @@ class App extends Component {
     }
 
     keyboardHandler(e) {
+        // Only letters and dash
         if ((e.keyCode > 64 && e.keyCode < 91) || e.keyCode === 189) {
             this.checkPressedLetter(e.key);
         }
@@ -105,10 +108,13 @@ class App extends Component {
     }
 
     updateGameState() {
-        const lettersToGuess = this.state.randomWordArray.filter(letter => !this.state.guessedLetters.includes(letter));
+        const lettersToGuess = this.state.randomWordArray.filter(letter => {
+            return !this.state.guessedLetters.includes(letter);
+        });
 
         if (lettersToGuess.length === 0) {
             new Audio(correctSoundFile).play();
+
             setTimeout(() => {
                 this.startGame();
             }, 500);
@@ -116,22 +122,26 @@ class App extends Component {
 
         if (this.state.missedLetters.length === 11) {
             new Audio(wrongSoundFile).play();
+
             this.finishGame();
         }
     }
 
     startGame() {
         this.fetchRandomWord();
+
         this.setState({
             isGameOver: false,
             missedLetters: [],
             guessedLetters: []
         });
+
         this.addKeyboardHandler();
     }
 
     finishGame() {
         this.setState({ isGameOver: true });
+
         this.removeKeyboardHandler();
     }
 }

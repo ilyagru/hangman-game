@@ -16,7 +16,11 @@ import rightFoot from '../../imgs/right-foot.png';
 import leftFoot from '../../imgs/left-foot.png';
 
 function Folk({ missedLetters }) {
-    const body = [head, neck, corpus, rightArm, leftArm, rightHand, leftHand, rightLeg, leftLeg, rightFoot, leftFoot];
+    const body = [
+        head, neck, corpus,
+        rightArm, leftArm, rightHand, leftHand,
+        rightLeg, leftLeg, rightFoot, leftFoot
+    ];
     body.length = missedLetters.length;
 
     const bodyParts = body.map((part, index) => {

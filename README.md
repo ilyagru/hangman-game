@@ -1,3 +1,57 @@
+# My Solution
+
+Hey there!
+
+## Description
+
+### General
+
+The live version is available at [https://ilyagru.github.io/hangman-game/](https://ilyagru.github.io/hangman-game/).
+
+I made the task using React.js and Webpack.
+I tried to create the app which meets all the requirements for this assignment.
+Also I added some additional features like unit testing and sounds.
+
+### Testing
+
+For tests I use Jest, Enzyme, Sinon.
+A set of tests is written.
+
+### Styles
+
+Custom styles are written with SASS (SCSS syntax) preprocessor.
+
+## Build Setup
+
+- Clone or download this repository
+- Install and run
+
+``` bash
+# go to directory
+cd hangman-game
+
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:3000
+npm start
+
+# build for production with minification
+npm run build
+
+# run all tests
+npm test
+```
+
+For detailed explanation on how things work, checkout the [guide](https://github.com/facebookincubator/create-react-app).
+
+**Thank you for the given opportunity!**
+
+**Please contact me if you have some questions or can give me valuable feedback.**
+
+
+---
+
 # Front-end task
 
 Hey there!

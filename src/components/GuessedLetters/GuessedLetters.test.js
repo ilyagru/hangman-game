@@ -11,7 +11,9 @@ it('renders without crashing', () => {
 });
 
 it('shows correct letters', () => {
-    const guessedLettersComponent = render(<GuessedLetters guessedLetters={mockGuessedLetters} randomWordArray={mockRandomWordArray} />);
+    const guessedLettersComponent = render(
+        <GuessedLetters guessedLetters={mockGuessedLetters} randomWordArray={mockRandomWordArray} />
+    );
 
     const letters = guessedLettersComponent.find('.GuessedLetter');
     const disabledLetters = guessedLettersComponent.find('.GuessedLetter.disabled');
