@@ -6,13 +6,13 @@ Hey there!
 
 ### General
 
-The live version is available at [https://ilyagru.github.io/hangman-game/](https://ilyagru.github.io/hangman-game/).
-
-**NOTE**: Wordnik API doesn't use HTTPS. So to be able to play you need to allow your browser load from insecure resource. (In Chrome you can click Shield icon in the URL bar and click Load unsafe scripts).
-
 I made the task using React.js and Webpack.
 I tried to create the app which meets all the requirements for this assignment as fast as possible.
 Also I added some additional features like unit testing and sounds.
+
+The live version is available at [https://ilyagru.github.io/hangman-game/](https://ilyagru.github.io/hangman-game/).
+
+**NOTE**: Wordnik API doesn't use HTTPS. So to be able to play you need to allow your browser load from insecure resource or launch it on your computer. (In Chrome you can click Shield icon in the URL bar and click Load unsafe scripts).
 
 ### Testing
 
@@ -40,6 +40,9 @@ npm start
 
 # build for production with minification
 npm run build
+
+# deploy to gh-pages (don't forget to change homepage in package.json file)
+npm run deploy
 
 # run all tests
 npm test
