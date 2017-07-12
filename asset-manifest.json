@@ -1,0 +1,21 @@
+{
+  "main.css": "static/css/main.1b40856a.css",
+  "main.css.map": "static/css/main.1b40856a.css.map",
+  "main.js": "static/js/main.715ebca4.js",
+  "main.js.map": "static/js/main.715ebca4.js.map",
+  "static/media/AllerDisplay.ttf": "static/media/AllerDisplay.4cf80f22.ttf",
+  "static/media/bar.png": "static/media/bar.d63c541b.png",
+  "static/media/corpus.png": "static/media/corpus.a0ed449f.png",
+  "static/media/correct.wav": "static/media/correct.38029e5a.wav",
+  "static/media/head.png": "static/media/head.cc2fe300.png",
+  "static/media/left-arm.png": "static/media/left-arm.c41b4080.png",
+  "static/media/left-foot.png": "static/media/left-foot.a7431eb0.png",
+  "static/media/left-hand.png": "static/media/left-hand.21efd067.png",
+  "static/media/left-leg.png": "static/media/left-leg.aa280815.png",
+  "static/media/neck.png": "static/media/neck.88b2d3ed.png",
+  "static/media/right-arm.png": "static/media/right-arm.b6709fba.png",
+  "static/media/right-foot.png": "static/media/right-foot.9dd94788.png",
+  "static/media/right-hand.png": "static/media/right-hand.ea7797c5.png",
+  "static/media/right-leg.png": "static/media/right-leg.8cc96677.png",
+  "static/media/wrong.wav": "static/media/wrong.820a7796.wav"
+}
