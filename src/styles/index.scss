@@ -1,0 +1,34 @@
+@import 'variables.scss';
+@import 'helpers.scss';
+
+@font-face {
+    font-family: 'AllerDisplay';
+    src: url('../fonts/AllerDisplay.ttf');
+}
+$font-stack: AllerDisplay, sans-serif;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $font-stack;
+    font-size: 16px;
+    color: $color-main;
+    background: $background-color-main;
+    text-transform: uppercase;
+}
+
+p {
+    margin-top: 0;
+}
+
+button {
+    font-family: $font-stack;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}

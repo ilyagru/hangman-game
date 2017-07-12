@@ -1,0 +1,85 @@
+.Folk {
+    position: relative;
+    top: 0;
+
+    img {
+        display: inline-block;
+    }
+
+    .bar {
+        margin-left: -139px;
+        width: 224px;
+    }
+
+    &-body {
+        img {
+            position: absolute;
+        }
+
+        &-head {
+            width: 96px;
+            top: 28px;
+            left: 14px;
+            z-index: 10;
+        }
+        &-neck {
+            width: 23px;
+            top: 121px;
+            left: 52px;
+        }
+        &-corpus {
+            width: 52px;
+            top: 142px;
+            left: 37px;
+            z-index: 10;
+        }
+        &-right-arm {
+            width: 63px;
+            top: 142px;
+            left: 67px;
+            z-index: 10;
+        }
+        &-left-arm {
+            width: 63px;
+            top: 142px;
+            left: -6px;
+            z-index: 10;
+        }
+        &-right-hand {
+            width: 15px;
+            top: 190px;
+            left: 117px;
+            z-index: 1;
+        }
+        &-left-hand {
+            width: 15px;
+            top: 190px;
+            left: -8px;
+            z-index: 1;
+        }
+        &-right-leg {
+            width: 41px;
+            top: 214px;
+            left: 64px;
+            z-index: 10;
+        }
+        &-left-leg {
+            width: 41px;
+            top: 214px;
+            left: 21px;
+            z-index: 10;
+        }
+        &-right-foot {
+            width: 42px;
+            top: 293px;
+            left: 82px;
+            z-index: 9;
+        }
+        &-left-foot {
+            width: 42px;
+            top: 293px;
+            left: 2px;
+            z-index: 9;
+        }
+    }
+}

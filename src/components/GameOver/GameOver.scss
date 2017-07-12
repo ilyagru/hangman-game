@@ -1,0 +1,35 @@
+@import '../../styles/variables.scss';
+
+.GameOver {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 11;
+    opacity: 0.741;
+    background-color: $background-color-main;
+    text-align: center;
+    margin: auto;
+
+    &-title {
+        color: #fff;
+        font-size: 46px;
+        margin-bottom: 24px;
+        line-height: 40px;
+    }
+
+    &-button {
+        font-size: 16px;
+        color: $color-bright-alt;
+        padding: 20px 45px;
+        background-color: transparent;
+        border: 2px dashed $color-bright-alt;
+        border-radius: $border-radius-secondary;
+        line-height: 10px;
+
+        &:hover {
+            opacity: 0.74;
+        }
+    }
+}

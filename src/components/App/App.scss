@@ -1,0 +1,33 @@
+@import '../../styles/variables.scss';
+
+.App {
+    padding: 36px;
+    margin: auto;
+    width: 810px;
+    height: 490px;
+    background: $background-color-light;
+    border-radius: $border-radius-main;
+    box-shadow: $box-shadow-main;
+    overflow: hidden;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+
+    &::after {
+        background-color: $color-bright;
+        height:100%;
+        width:100%;
+        position:relative;
+        transform: rotate(45deg);
+        content:'';
+        display:block;
+        position:absolute;
+        right: -75%;
+        bottom: -74%;
+        z-index: -1;
+    }
+}
+
